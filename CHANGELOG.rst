@@ -6,6 +6,8 @@ NVIDIA Model Optimizer Changelog (Linux)
 
 **New Features**
 
+- Add support for **Flux.2-dev** (`black-forest-labs/FLUX.2-dev`) quantization (INT8, FP8, NVFP4) and ONNX export.
+- Add quantization support for ``Flux2Attention`` and ``Flux2ParallelSelfAttention`` layers in the Diffusers plugin.
 - Add support for Transformer Engine quantization for Megatron Core models.
 - Add support for Qwen3-Next model quantization.
 - Add support for dynamically linked TensorRT plugins in the ONNX quantization workflow.

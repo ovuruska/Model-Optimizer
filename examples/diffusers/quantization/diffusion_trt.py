@@ -52,6 +52,7 @@ MODEL_ID = {
     "sdxl-turbo": ModelType.SDXL_TURBO,
     "sd3-medium": ModelType.SD3_MEDIUM,
     "flux-dev": ModelType.FLUX_DEV,
+    "flux-2-dev": ModelType.FLUX_DEV,
     "flux-schnell": ModelType.FLUX_SCHNELL,
 }
 
@@ -60,6 +61,7 @@ DTYPE_MAP = {
     "sdxl-turbo": torch.float16,
     "sd3-medium": torch.float16,
     "flux-dev": torch.bfloat16,
+    "flux-2-dev": torch.bfloat16,
     "flux-schnell": torch.bfloat16,
 }
 
@@ -142,7 +144,7 @@ def main():
         "--model",
         type=str,
         default="flux-dev",
-        choices=["sdxl-1.0", "sdxl-turbo", "sd3-medium", "flux-dev", "flux-schnell"],
+        choices=["sdxl-1.0", "sdxl-turbo", "sd3-medium", "flux-dev", "flux-schnell", "flux-2-dev"],
     )
     parser.add_argument(
         "--override-model-path",
